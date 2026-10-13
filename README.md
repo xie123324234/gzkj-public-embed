@@ -4,13 +4,13 @@
 
 ## 连接 WeKnora
 
-1. 先把本仓库连接到 Cloudflare Pages，项目名建议使用 **weknora-public-embed**。
+1. 先把本仓库连接到 Cloudflare Pages，项目名建议使用 **gzkj-public-embed**。
 2. Cloudflare Pages 的构建设置：
    - Framework preset：None
    - Build command：留空
    - Build output directory：public
-3. 部署一次，确认最终公开地址，例如 https://weknora-public-embed.pages.dev。
-4. 在 WeKnora 的网页嵌入渠道中，把该站点的完整 Origin 填入“域名白名单”，例如 https://weknora-public-embed.pages.dev。这里填写的是宿主网页地址。
+3. 部署一次，确认最终公开地址，例如 https://gzkj-public-embed.pages.dev。
+4. 在 WeKnora 的网页嵌入渠道中，把该站点的完整 Origin 填入“域名白名单”，例如 https://gzkj-public-embed.pages.dev。这里填写的是宿主网页地址。
 5. 确保 WeKnora 的嵌入页面和聊天接口也有外网可访问的 HTTPS 地址。然后在 WeKnora 管理页面复制 iframe 代码，只取 src 属性中的完整地址。
 6. 把这个完整地址填入 public/config.js 的 WEKNORA_EMBED_URL，提交并推送到 GitHub。Cloudflare Pages 会自动重新部署。
 7. 用手机关闭公司 Wi-Fi 后打开 Pages 地址，确认匿名聊天可用。
