@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4f7f8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="知识库智能问答" />
+    <title>知识库问答</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/config.js"></script>
+    <script defer src="/app.js"></script>
+  </head>
+  <body>
+    <main id="setup" class="setup" aria-labelledby="setup-title" hidden>
+      <section class="setup-panel">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M8 10.5A3.5 3.5 0 0 1 11.5 7H31v23H11.5A3.5 3.5 0 0 0 8 33.5v-23Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M8 11h19M14 14.5h11M14 19h11M14 23.5h8M8 33.5A3.5 3.5 0 0 1 11.5 30H31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M31 7v23" stroke="#20a77a" stroke-width="2"/>
+          </svg>
+        </div>
+        <p class="eyebrow">WEKNORA · PUBLIC CHAT</p>
+        <h1 id="setup-title">知识库问答</h1>
+        <p class="summary">聊天页面还没有连接到 WeKnora。</p>
+        <div class="setup-note" role="status">
+          请先在 public/config.js 中填写 WeKnora 生成的嵌入页面地址，再部署到 Cloudflare Pages。
+        </div>
+      </section>
+    </main>
+
+    <iframe
+      id="chat"
+      title="WeKnora 知识库问答"
+      allow="clipboard-write"
+      referrerpolicy="strict-origin-when-cross-origin"
+      hidden
+    ></iframe>
+
+    <noscript>请启用浏览器 JavaScript 后使用知识库问答。</noscript>
+  </body>
+</html>
